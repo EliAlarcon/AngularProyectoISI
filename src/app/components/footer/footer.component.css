@@ -1,0 +1,24 @@
+.fondo {
+    background-color: #0056b3;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+p {
+    color: #fff;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.texto{
+    margin-top: 25px;
+}
+
+.r{
+    font-size: 12px;
+}
+
+.footer{
+    text-align: center;
+}

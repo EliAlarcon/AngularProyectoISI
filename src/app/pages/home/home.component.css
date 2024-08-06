@@ -1,0 +1,99 @@
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 60px;
+}
+
+.buscador {
+    width: 20%;
+}
+
+.search-input-group {
+    position: relative;
+    color: #413c55;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.search-input-group .search-input-icon {
+    display: flex;
+    position: absolute;
+    left: 15px;
+    top: calc(50% - 11px);
+}
+
+.search-input-group .search-input {
+    padding: .75rem 1.25rem .75rem 45px;
+    margin: 0;
+    height: 47px;
+    font-size: .875rem;
+    font-weight: 500;
+    border-radius: 7px;
+    background-color: #f9f9fa;
+    border: 1px solid #e1e0e4;
+}
+
+.search-input-group .search-input-btn {
+    position: absolute;
+    top: calc(50% - 15px);
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 60px;
+    border: none;
+    color: #413c55;
+    transition: all 0.2s ease-in-out;
+}
+
+.titulo-mis-cursos{
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.card{
+    width: 350px;
+    height: 375px;
+    background-color: #000;
+}
+
+.horario {
+    margin-bottom: 10px;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #fff;
+    opacity: .7;
+    margin-top: 15px;
+}
+
+.materia {
+    font-size: 1.5rem;
+    line-height: 2.5;
+    color: #fff;
+}
+
+.foto-perfil-docente{
+    width: 32px;
+    height: 32px;
+    border-radius: 7px;
+}
