@@ -1,64 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #222;
-        }
-
-        .navbar {
-            width: 200px;
-            background-color: #111;
-            color: white;
-            padding: 20px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100%;
-        }
-
-        .navbar-logo {
-            display: block;
-            margin: 0 auto;
-            width: 100px;
-            height: 100px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            margin-bottom: 20px;
-        }
-
-        .navbar-item {
-            margin-bottom: 10px;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .navbar-item:hover {
-            background-color: #333;
-        }
-
-        .navbar-item i {
-            margin-right: 10px;
-            font-size: 1.2em;
-        }
-    </style>
-</head>
 <body>
     <div class="navbar">
-        <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/ITSQMET_Logo.svg/1200px-ITSQMET_Logo.svg.png" alt="Logo ITSQMET"></h1>
+        <h1><img src="assets/images/logo_ISI.png" alt="Logo IT ISI"></h1>
     <ul>
-        <div class="navbar-logo" style="background-image: url('https://www.itsqmet.edu.ec/images/logo-itsqmet.png');"></div>
         <div class="navbar-item" onclick="window.location.href='#'"><i class="fas fa-book"></i>Mis cursos</div>
         <div class="navbar-item" onclick="window.location.href='#'"><i class="fas fa-home"></i>Página principal</div>
         <div class="navbar-item" onclick="window.location.href='#'"><i class="fas fa-user"></i>Área personal</div>
     </ul>   
     </div>
 </body>
-</html>
