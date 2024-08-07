@@ -1,0 +1,40 @@
+<app-nav-bar-top></app-nav-bar-top>
+<div class="task-container">
+    <h2>Formulario de Tareas</h2>
+  
+    <form (ngSubmit)="submitTask()" >
+      <div class="form-group">
+        <label for="taskName">Nombre de la Tarea:</label>
+        <input type="text" id="taskName"  name="taskName" required />
+      </div>
+      <div class="form-group">
+        <label for="taskDate">Fecha:</label>
+        <input type="date" id="taskDate" name="taskDate" required />
+      </div>
+      <div class="form-group">
+        <label for="taskDescription">Descripción:</label>
+        <textarea id="taskDescription"  name="taskDescription" required></textarea>
+      </div>
+      <button type="submit" class="btn">Guardar Tarea</button>
+    </form>
+  
+    <!-- Lista de tareas -->
+    <div *ngIf="tasks.length > 0">
+      <h3>Lista de Tareas</h3>
+      <ul>
+        <li *ngFor="let task of tasks">
+          <div class="task-item">
+            <span>{{ task.name }} ({{ task.date }}) - {{ task.description }}</span>
+            <button (click)="editTask(task)" class="btn-edit">Editar</button>
+            <button (click)="deleteTask(task)" class="btn-delete">Eliminar</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Mensaje si no hay tareas -->
+    <div *ngIf="tasks.length === 0">
+      <p>No hay tareas disponibles.</p>
+    </div>
+  </div>
+  
