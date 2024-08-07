@@ -1,7 +1,9 @@
 .container {
+    margin-top: 60px;
     background-color: #fff;
     padding: 50px;
     border: 1px solid #ccc;
+    align-items: flex-start;
 }
 
 h2 {
