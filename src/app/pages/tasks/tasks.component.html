@@ -16,9 +16,9 @@
         <textarea id="taskDescription"  name="taskDescription" required></textarea>
       </div>
       <button type="submit" class="btn">Guardar Tarea</button>
+      <button type="submit" class="btn" (click)="regresar()">Regresar al curso</button>
     </form>
-  
-    <!-- Lista de tareas -->
+
     <div *ngIf="tasks.length > 0">
       <h3>Lista de Tareas</h3>
       <ul>
@@ -32,7 +32,6 @@
       </ul>
     </div>
   
-    <!-- Mensaje si no hay tareas -->
     <div *ngIf="tasks.length === 0">
       <p>No hay tareas disponibles.</p>
     </div>
