@@ -1,11 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body, html {
-    overflow-x: hidden; 
-    width: 100%;
+body,
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+button.btn {
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button.btn:hover {
+  background-color: #004494;
+}
+
+button.btn-edit {
+  background-color: #0056b3;
+}
+
+button.btn-edit:hover {
+  background-color: #004494;
+}
+
+button.btn-delete {
+  background-color: #d9534f;
+}
+
+button.btn-delete:hover {
+  background-color: #c9302c;
+}
+
+.ventana {
+  justify-content: center;
+  align-items: flex-start;
+  width: 100vw;
+  margin-top: 60px;
 }
