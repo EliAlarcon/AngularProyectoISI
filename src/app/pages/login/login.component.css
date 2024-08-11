@@ -13,10 +13,12 @@ body {
   .logo {
     display: inline-block;
     margin-right: 20px;
+    margin-bottom: 25px;
+    margin-top: 15px;
   }
   
   .logo img {
-    height: 50px;
+    height: 60px;
   }
   
   .container {
@@ -53,9 +55,3 @@ body {
   .link:hover {
     text-decoration: underline;
   }
-  
-  .footer {
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: center;
-}

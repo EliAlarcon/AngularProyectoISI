@@ -1,3 +1,11 @@
+.cursos{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100vw;
+  margin-top: 60px;
+}
+
 .container {
   margin-top: 20px;
 }

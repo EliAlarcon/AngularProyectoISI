@@ -1,26 +1,35 @@
-<app-nav-bar></app-nav-bar>
-<div class="container">
+<app-nav-bar-top></app-nav-bar-top>
+<!-- <app-nav-bar></app-nav-bar> -->
+<div class="cursos">
+  <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1>INTEGRACION DE SISTEMAS INFORMATICOS [Mod 4, ABR-SEP24 Mat. S-A  I
+        <h1>INTEGRACION DE SISTEMAS INFORMATICOS [Mod 4, ABR-SEP24 Mat. S-A I
           m mi j 07h00-08h30-Sur]</h1>
         <div class="card">
           <div class="card-body">
             <h2 class="card-title">¡Bienvenidos al INSTITUTO TECNOLÓGICO UNIVERSITARIO ISI!</h2>
             <p class="card-text">
-                Queridos estudiantes,
+              Queridos estudiantes,
             </p>
             <p class="card-text">
-                Nos complace darles la más cálida bienvenida a un nuevo ciclo académico. Estamos emocionados de acompañarlos en este viaje de aprendizaje y crecimiento. En el IT ISI, nos esforzamos por proporcionar una educación de calidad que les permitirá alcanzar sus metas y sueños.
+              Nos complace darles la más cálida bienvenida a un nuevo ciclo académico. Estamos emocionados de
+              acompañarlos en este viaje de aprendizaje y crecimiento. En el ITU ISI, nos esforzamos por proporcionar
+              una educación de calidad que les permitirá alcanzar sus metas y sueños.
             </p>
             <p class="card-text">
-                Recuerden que nuestra plataforma virtual está diseñada para ser una herramienta poderosa en su camino académico. Aquí encontrarán todos los recursos necesarios para sus cursos, además de un espacio para interactuar con sus profesores y compañeros.
+              Recuerden que nuestra plataforma virtual está diseñada para ser una herramienta poderosa en su camino
+              académico. Aquí encontrarán todos los recursos necesarios para sus cursos, además de un espacio para
+              interactuar con sus profesores y compañeros.
             </p>
             <p class="card-text">
-                Les animamos a aprovechar al máximo todas las oportunidades que se les presenten, a participar activamente en las clases y a no dudar en buscar ayuda cuando la necesiten. Nuestro equipo docente y administrativo está aquí para apoyarles en cada paso del camino.
+              Les animamos a aprovechar al máximo todas las oportunidades que se les presenten, a participar activamente
+              en las clases y a no dudar en buscar ayuda cuando la necesiten. Nuestro equipo docente y administrativo
+              está aquí para apoyarles en cada paso del camino.
             </p>
             <p class="card-text">
-                Les deseamos un año lleno de éxitos, aprendizaje y experiencias inolvidables. ¡Vamos a construir juntos un futuro brillante!
+              Les deseamos un año lleno de éxitos, aprendizaje y experiencias inolvidables. ¡Vamos a construir juntos un
+              futuro brillante!
             </p>
             <p class="card-text">Con entusiasmo,</p>
             <p class="card-text">El equipo del INSTITUTO TECNOLÓGICO UNIVERSITARIO ISI</p>
@@ -31,23 +40,23 @@
             <h2 class="card-title">ACTIVIDADES A REALIZAR</h2>
           </div>
         </div>
-        
+
         <div class="row">
           <div class="col-md-3">
-            <a href="/tarea" style="text-decoration: none;">
-              <div class="card">
-                <div class="card-body">
-                  <img src="assets/images/estudiantes1.png" alt="Actividad Autónoma" class="card-img-top">
-                  <h5 class="card-title">Tarea 1</h5>
-                </div>
+            <div class="card">
+              <div class="card-body">
+                <img src="assets/images/estudiantes1.png" alt="Actividad Autónoma" class="card-img-top">
+                <h5 class="card-title">Tarea 1</h5>
+                <button type="submit" (click)="actividad()" class="btn">IR A LA ACTIVIDAD</button>
               </div>
-            </a>
+            </div>
           </div>
           <div class="col-md-3">
             <div class="card">
               <div class="card-body">
                 <img src="assets/images/estudiantes2.png" alt="Actividad Autónoma" class="card-img-top">
                 <h5 class="card-title">Tarea 2</h5>
+                <button type="submit" (click)="actividad()" class="btn">IR A LA ACTIVIDAD</button>
               </div>
             </div>
           </div>
@@ -56,6 +65,7 @@
               <div class="card-body">
                 <img src="assets/images/estudiantes3.png" alt="Actividad en Clase" class="card-img-top">
                 <h5 class="card-title">Tarea 3</h5>
+                <button type="submit" (click)="actividad()" class="btn">IR A LA ACTIVIDAD</button>
               </div>
             </div>
           </div>
@@ -64,6 +74,7 @@
               <div class="card-body">
                 <img src="assets/images/estudiantes4.png" alt="Examen Final" class="card-img-top">
                 <h5 class="card-title">Examen Final</h5>
+                <button type="submit" (click)="actividad()" class="btn">IR A LA ACTIVIDAD</button>
               </div>
             </div>
           </div>
@@ -71,3 +82,4 @@
       </div>
     </div>
   </div>
+</div>
