@@ -19,10 +19,10 @@
       <button type="submit" class="btn" (click)="regresar()">Regresar al curso</button>
     </form>
 
-    <div *ngIf="tasks.length > 0">
+    <div ngIf="tasks.length > 0">
       <h3>Lista de Tareas</h3>
       <ul>
-        <li *ngFor="let task of tasks">
+        <li ngFor="let task of tasks">
           <div class="task-item">
             <span>{{ task.name }} ({{ task.date }}) - {{ task.description }}</span>
             <button (click)="editTask(task)" class="btn-edit">Editar</button>
@@ -32,7 +32,7 @@
       </ul>
     </div>
   
-    <div *ngIf="tasks.length === 0">
+    <div ngIf="tasks.length === 0">
       <p>No hay tareas disponibles.</p>
     </div>
   </div>
