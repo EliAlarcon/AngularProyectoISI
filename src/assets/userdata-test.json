@@ -1,0 +1,16 @@
+{
+    "lista": [
+        {
+            "id": "101",
+            "nombre": "Juan Perez",
+            "carrera": "Desarollo de software",
+            "nivel": "Quinto"
+        },
+        {
+            "id": "102",
+            "nombre": "Jenifer Pereira",
+            "carrera": "Desarollo de software",
+            "nivel": "Cuarto"
+        }
+    ]
+}

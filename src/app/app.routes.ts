@@ -5,7 +5,7 @@ import { CourseComponent } from './pages/course/course.component';
 import { GradesComponent } from './pages/grades/grades.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { TasksComponent } from './pages/tasks/tasks.component';
-import { ListComponent } from './pages/list/list.component';
+import { ListStudentsComponent } from './pages/list-students/list-students.component';
 
 export const routes: Routes = [
     {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -15,5 +15,5 @@ export const routes: Routes = [
     { path: 'grades', component: GradesComponent},
     { path: 'profile', component: ProfileComponent},
     { path: 'tasks', component: TasksComponent},
-    { path: 'list', component: ListComponent },
+    { path: 'list-students', component: ListStudentsComponent },
 ];
