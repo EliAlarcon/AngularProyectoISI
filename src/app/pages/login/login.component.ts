@@ -20,18 +20,18 @@ export class LoginComponent {
   public static logueado: boolean = false;
 
   login(formulario: any) {
-    console.log(formulario.value);
+    console.log(formulario.email);
     this.service.getUsuarios().subscribe((users) => {
       console.log('Usuarios obtenidos:', users);
       let foundUser;
 
       for (const user of users) {
 
-        if (user.username === formulario.value.username && user.password === formulario.value.password) {
-          let userID = user.id;
-          let userName = user.name;
-          let rol = user.rol;
-          localStorage.setItem('usuarioID', userID)
+        if (user.email === formulario.value.username && user.contrasena === formulario.value.password) {
+          let userID = user.idUsuario;
+          let userName = user.email;
+          let rol = user.tipo;
+          localStorage.setItem('usuarioID', userID.toString())
           localStorage.setItem('nameOfUser', userName)
           localStorage.setItem('role', rol)
           console.log(rol)
