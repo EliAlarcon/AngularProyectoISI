@@ -1,0 +1,39 @@
+{
+    "tareasProfesor": [
+        {
+            "id": 1,
+            "nombre": "Proyecto de Desarrollo Web",
+            "descripción": "Desarrollar una aplicación web utilizando Angular y Spring Boot.",
+            "fecha": "2024-09-15",
+            "nota": ""
+        },
+        {
+            "id": 2,
+            "nombre": "Implementación de API REST",
+            "descripción": "Crear una API RESTful con Spring Boot que interactúe con una base de datos H2.",
+            "fecha": "2024-09-22",
+            "nota": ""
+        },
+        {
+            "id": 3,
+            "nombre": "Desarrollo de Aplicación Móvil",
+            "descripción": "Desarrollar una aplicación móvil utilizando Flutter para la gestión de tareas.",
+            "fecha": "2024-10-05",
+            "nota": ""
+        },
+        {
+            "id": 4,
+            "nombre": "Análisis de Datos",
+            "descripción": "Realizar un análisis de datos utilizando Python y herramientas como Pandas y Matplotlib.",
+            "fecha": "2024-10-12",
+            "nota": ""
+        },
+        {
+            "id": 5,
+            "nombre": "Diseño de Base de Datos",
+            "descripción": "Diseñar y normalizar una base de datos para una aplicación de gestión de usuarios.",
+            "fecha": "2024-10-19",
+            "nota": ""
+        }
+    ]
+}
