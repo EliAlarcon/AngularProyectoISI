@@ -57,6 +57,7 @@ export class CourseComponent {
           materia.forEach((element) => {
             if (element.idMateria == this.idMateria) {
               this.nombreMateria = element.nombre;
+              localStorage.setItem('NombreMateriaSeleccionada', element.nombre);
             }
           });
           resolve(this.nombreMateria);
