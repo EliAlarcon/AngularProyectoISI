@@ -8,16 +8,16 @@
                 <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Nombre</th>
+                    <th scope="col">Correo</th>
                     <th scope="col">Carrera</th>
-                    <th scope="col">Nivel</th>
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let item of students">
-                    <td>{{item.id}}</td>
-                    <td>{{item.nombre}}</td>
-                    <td>{{item.carrera}}</td>
-                    <td>{{item.nivel}}</td>
+                <tr *ngFor="let item of notas">
+                    <td>{{item.estudiante.idUsuario}}</td>
+                    <td>{{item.estudiante.nombre}} {{item.estudiante.apellido}}</td>
+                    <td>{{item.estudiante.email}}</td>
+                    <td>{{item.tarea.materia.curso.carrera.nombre}}</td>
                 </tr>
             </tbody>
         </table>

@@ -4,8 +4,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1>INTEGRACION DE SISTEMAS INFORMATICOS [Mod 4, ABR-SEP24 Mat. S-A I
-          m mi j 07h00-08h30-Sur]</h1>
+        <h1>{{nombreMateria}}</h1>
         <div class="card">
           <div class="card-body">
             <h2 class="card-title">¡Bienvenidos al INSTITUTO TECNOLÓGICO UNIVERSITARIO ISI!</h2>
@@ -42,38 +41,11 @@
         </div>
 
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3" *ngFor="let item of datosTareas">
             <div class="card">
               <div class="card-body">
-                <img src="assets/images/estudiantes1.png" alt="Actividad Autónoma" class="card-img-top">
-                <h5 class="card-title">Tarea 1</h5>
-                <button type="submit" (click)="actividad()" class="btn">IR A LA ACTIVIDAD</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card">
-              <div class="card-body">
-                <img src="assets/images/estudiantes2.png" alt="Actividad Autónoma" class="card-img-top">
-                <h5 class="card-title">Tarea 2</h5>
-                <button type="submit" (click)="actividad()" class="btn">IR A LA ACTIVIDAD</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card">
-              <div class="card-body">
-                <img src="assets/images/estudiantes3.png" alt="Actividad en Clase" class="card-img-top">
-                <h5 class="card-title">Tarea 3</h5>
-                <button type="submit" (click)="actividad()" class="btn">IR A LA ACTIVIDAD</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card">
-              <div class="card-body">
-                <img src="assets/images/estudiantes4.png" alt="Examen Final" class="card-img-top">
-                <h5 class="card-title">Examen Final</h5>
+                <img src="assets/images/estudiantes{{item.idTarea}}.png" alt="Actividad Autónoma" class="card-img-top">
+                <h5 class="card-title">{{item.nombre}}</h5>
                 <button type="submit" (click)="actividad()" class="btn">IR A LA ACTIVIDAD</button>
               </div>
             </div>

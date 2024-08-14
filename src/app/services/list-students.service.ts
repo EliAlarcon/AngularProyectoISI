@@ -1,18 +1,19 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Nota } from '../models/nota';
 
 @Injectable({
   providedIn: 'root'
 })
-export class UserTestService {
+export class ListStudentsService {
 
   constructor(private http: HttpClient) { }
 
-  private API_TEST = "http://localhost:3000/lista"
+  private notas = 'http://localhost:3000/notas';
 
-  //Obtener estudiantes en la API
-  getStudent(): Observable<any>{
-    return this.http.get(this.API_TEST)
+  getNotas(): Observable<Nota[]> {
+    return this.http.get<Nota[]>(this.notas);
   }
+  
 }

@@ -25,18 +25,19 @@
 <br>
 
 <!--Tarjetas de cursos-->
+<div *ngFor="let item of datosHome">
 <div class="card-container">
-    <a href="/curso" style="text-decoration: none;">
+    <a href="/curso/{{item.idMateria}}" style="text-decoration: none;">
         <div class="card">
             <div class="card-body">
                 <img src="https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png"
                     alt="foto-perfil-docente" class="foto-perfil-docente">
-                <p class="horario">Matutino</p>
-                <h4 class="materia">INTEGRACION DE SISTEMAS INFORMATICOS [Mod 4, ABR-SEP24 Mat. S-A
-                    (l m mi j) 07h00-08h30-Sur</h4>
+                <p class="horario">{{item.curso}}</p>
+                <h4 class="materia">{{item.materia}}</h4>
             </div>
         </div>
     </a>
+</div>
 </div>
 
 <br>

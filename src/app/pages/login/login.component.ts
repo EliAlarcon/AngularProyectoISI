@@ -20,7 +20,7 @@ export class LoginComponent {
   public static logueado: boolean = false;
 
   login(formulario: any) {
-    console.log(formulario.value);
+    console.log(formulario.email);
     this.service.getUsuarios().subscribe((users) => {
       console.log('Usuarios obtenidos:', users);
       let foundUser;
@@ -35,6 +35,7 @@ export class LoginComponent {
           let userEmail = user.email;
           let userCity = user.ciudad;
           let userCountry = user.pais;
+          let rol = user.tipo;
           localStorage.setItem('usuarioID', userID)
           localStorage.setItem('nameOfUser', userName)
           localStorage.setItem('userLastname', userLastname)
@@ -42,6 +43,8 @@ export class LoginComponent {
           localStorage.setItem('userEmail', userEmail)
           localStorage.setItem('userCity', userCity)
           localStorage.setItem('userCountry', userCountry)
+          localStorage.setItem('role', rol)
+          console.log(rol)
           foundUser = user;
           break;
         }

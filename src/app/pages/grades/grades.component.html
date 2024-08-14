@@ -2,27 +2,20 @@
 <div class="container">
     <h1>INTEGRACION DE SISTEMAS INFORMATICOS [Mod 4, ABR-SEP24 Mat. S-A I
         m mi j 07h00-08h30-Sur]</h1>
-    <!-- <div class="user-info">
-        <h4>Usuario: {{nombre}}</h4>
-    </div> -->
     <table class="table">
         <thead>
             <tr>
-                <th>Tarea 1</th>
-                <th>Tarea 2</th>
-                <th>Tarea 3</th>
-                <th>Examen Final</th>
+                <td *ngFor="let item of datosList">{{item.tarea}}</td>
                 <th>Promedio</th>
                 <th>Estado</th>
             </tr>
         </thead>
         <tbody>
-            <td>N1</td>
-            <td>N2</td>
-            <td>N3</td>
-            <td>N4</td>
-            <td>Prom</td>
-            <td>Est</td>
+            <tr >
+                <td *ngFor="let item of datosList">{{item.nota}}</td>
+                <td>{{ promedioNotas() }}</td>
+                <td>{{ promedioNotas() >= 7 ? 'APRO' : 'REP' }}</td>
+            </tr>
         </tbody>
     </table>
     <br>

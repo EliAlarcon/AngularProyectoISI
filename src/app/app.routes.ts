@@ -11,9 +11,10 @@ export const routes: Routes = [
     {path: '', redirectTo: 'login', pathMatch: 'full'},
     { path: 'login', component: LoginComponent},
     { path: 'home', component: HomeComponent},
-    { path: 'curso', component: CourseComponent},
+    { path: 'curso/:id', component: CourseComponent},
     { path: 'grades', component: GradesComponent},
     { path: 'profile/:idUser', component: ProfileComponent},
     { path: 'tasks', component: TasksComponent},
     { path: 'list-students', component: ListStudentsComponent },
+    {path: '**', redirectTo: 'login', pathMatch: 'full'}
 ];
