@@ -17,12 +17,14 @@
             </tr>
         </thead>
         <tbody>
-            <td>N1</td>
-            <td>N2</td>
-            <td>N3</td>
-            <td>N4</td>
-            <td>Prom</td>
-            <td>Est</td>
+            <tr *ngFor="let item of notas">
+                <td>{{item.tarea1}}</td>
+                <td>{{item.tarea2}}</td>
+                <td>{{item.tarea3}}</td>
+                <td>{{item.examen}}</td>
+                <td>{{ (item.tarea1 + item.tarea2 + item.tarea3 + item.examen) / 4 }}</td>
+                <td>{{ ((item.tarea1 + item.tarea2 + item.tarea3 + item.examen) / 4) > 7 ? 'APRO' : 'REP' }}</td>
+            </tr>
         </tbody>
     </table>
     <br>

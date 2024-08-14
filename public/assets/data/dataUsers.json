@@ -12,5 +12,24 @@
             "password": "prueba",
             "name": "Prueba Prueba"
         }
+    ],
+    
+    "notas": [
+        {
+            "idUser": 1,
+            "tarea1": 8,
+            "tarea2": 7,
+            "tarea3": 10,
+            "examen": 8,
+            "id": 1
+        },
+        {
+            "idUser": 2,
+            "tarea1": 10,
+            "tarea2": 9,
+            "tarea3": 10,
+            "examen": 8,
+            "id": 1
+        }
     ]
 }
