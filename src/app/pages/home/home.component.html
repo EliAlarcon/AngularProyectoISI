@@ -25,19 +25,21 @@
 <br>
 
 <!--Tarjetas de cursos-->
-<div *ngFor="let item of datosHome">
-<div class="card-container">
-    <a href="/curso/{{item.idMateria}}" style="text-decoration: none;">
-        <div class="card">
-            <div class="card-body">
-                <img src="https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png"
-                    alt="foto-perfil-docente" class="foto-perfil-docente">
-                <p class="horario">{{item.curso}}</p>
-                <h4 class="materia">{{item.materia}}</h4>
-            </div>
+<div class="row">
+    <div class="col-lg-4 col-md-6 mb-3 d-flex justify-content-start" *ngFor="let item of datosHome">
+        <div class="card-container">
+            <a href="/curso/{{item.idMateria}}" style="text-decoration: none;">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png"
+                            alt="foto-perfil-docente" class="foto-perfil-docente">
+                        <p class="horario">{{item.curso}}</p>
+                        <h4 class="materia">{{item.materia}}</h4>
+                    </div>
+                </div>
+            </a>
         </div>
-    </a>
-</div>
+    </div>
 </div>
 
 <br>
