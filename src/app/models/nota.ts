@@ -1,5 +1,5 @@
 import { Tarea } from "./tarea";
-import { Usuario } from "./Usuario";
+import { Usuario } from "./usuario";
 
 export interface Nota {
     idNota: number;
