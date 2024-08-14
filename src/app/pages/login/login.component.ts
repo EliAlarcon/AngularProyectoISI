@@ -30,8 +30,11 @@ export class LoginComponent {
         if (user.username === formulario.value.username && user.password === formulario.value.password) {
           let userID = user.id;
           let userName = user.name;
+          let rol = user.rol;
           localStorage.setItem('usuarioID', userID)
           localStorage.setItem('nameOfUser', userName)
+          localStorage.setItem('role', rol)
+          console.log(rol)
           foundUser = user;
           break;
         }

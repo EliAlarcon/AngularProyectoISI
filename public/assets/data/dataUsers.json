@@ -4,13 +4,22 @@
             "id": 1,
             "username": "alopez",
             "password": "prueba123",
-            "name": "Alejandra Lopez"
+            "name": "Alejandra Lopez",
+            "rol": "estudiante"
         },
         {
             "id": 2,
             "username": "prueba",
             "password": "prueba",
-            "name": "Prueba Prueba"
+            "name": "Prueba Prueba",
+            "rol": "estudiante"
+        },
+        {
+            "id": 3,
+            "username": "profe",
+            "password": "profe",
+            "name": "Profesor de Prueba",
+            "rol": "docente"
         }
     ],
     
