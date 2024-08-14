@@ -29,9 +29,19 @@ export class LoginComponent {
 
         if (user.username === formulario.value.username && user.password === formulario.value.password) {
           let userID = user.id;
-          let userName = user.name;
+          let userName = user.nombre;
+          let userLastname = user.apellidos;
+          let userCareer = user.carrera;
+          let userEmail = user.email;
+          let userCity = user.ciudad;
+          let userCountry = user.pais;
           localStorage.setItem('usuarioID', userID)
           localStorage.setItem('nameOfUser', userName)
+          localStorage.setItem('userLastname', userLastname)
+          localStorage.setItem('userCareer', userCareer)
+          localStorage.setItem('userEmail', userEmail)
+          localStorage.setItem('userCity', userCity)
+          localStorage.setItem('userCountry', userCountry)
           foundUser = user;
           break;
         }

@@ -12,5 +12,18 @@
             "carrera": "Desarollo de software",
             "nivel": "Cuarto"
         }
+    ],
+    "usuarios": [
+        {
+            "id": "101",
+            "nombre": "Juan",
+            "apellidos": "Perez",
+            "carrera": "Desarollo de software",
+            "email": "jperez@gmail.com",
+            "ciudad": "Quito",
+            "pais": "Ecuador",
+            "username": "jperez",
+            "password": "1234"
+        }
     ]
 }

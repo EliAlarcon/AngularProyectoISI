@@ -11,7 +11,7 @@
                     <label class="col-form-label">Nombre</label>
                 </div>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" disabled>
+                    <input type="text" class="form-control" name="nombre" [(ngModel)]="nombre" disabled>
                 </div>
             </div>
         </div>
@@ -21,7 +21,7 @@
                     <label class="col-form-label">Apellido(s)</label>
                 </div>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" disabled>
+                    <input type="text" class="form-control" name="apellido" [(ngModel)]="apellido" disabled>
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@
                     <label class="col-form-label">Carrera</label>
                 </div>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" disabled>
+                    <input type="text" class="form-control" name="carrera" [(ngModel)]="carrera" disabled>
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@
                     <label class="col-form-label">Email</label>
                 </div>
                 <div class="col-sm-8">
-                    <input type="email" class="form-control" disabled>
+                    <input type="email" class="form-control" name="email" [(ngModel)]="email" disabled>
                 </div>
             </div>
         </div>
@@ -51,7 +51,7 @@
                     <label class="col-form-label">Ciudad</label>
                 </div>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" disabled>
+                    <input type="text" class="form-control" name="ciudad" [(ngModel)]="ciudad" disabled>
                 </div>
             </div>
         </div>
@@ -61,13 +61,13 @@
                     <label class="col-form-label">País</label>
                 </div>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" disabled>
+                    <input type="text" class="form-control" name="pais" [(ngModel)]="pais" disabled>
                 </div>
             </div>
         </div>
-        <div class="btn-group" role="group">
+        <!-- <div class="btn-group" role="group">
             <button type="submit" class="btn btn-outline-primary">Actualizar</button>
             <button type="submit" class="btn btn-outline-primary">Cancelar</button>
-        </div>
+        </div> -->
     </form>
 </div>

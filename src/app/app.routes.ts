@@ -13,7 +13,7 @@ export const routes: Routes = [
     { path: 'home', component: HomeComponent},
     { path: 'curso', component: CourseComponent},
     { path: 'grades', component: GradesComponent},
-    { path: 'profile', component: ProfileComponent},
+    { path: 'profile/:idUser', component: ProfileComponent},
     { path: 'tasks', component: TasksComponent},
     { path: 'list-students', component: ListStudentsComponent },
 ];

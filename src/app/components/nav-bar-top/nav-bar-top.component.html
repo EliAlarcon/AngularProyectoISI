@@ -11,7 +11,7 @@
                     aria-expanded="false"><i class="bi bi-caret-down-fill"></i></a>
                 <ul class="dropdown-menu dropdown-menu-end">
                     <li><a class="dropdown-item" href="/home">Página principal</a></li>
-                    <li><a class="dropdown-item" href="/profile">Perfil</a></li>
+                    <li><a class="dropdown-item" [routerLink]="['/profile', id]">Perfil</a></li>
                     <li><a class="dropdown-item" href="/grades">Calificaciones</a></li>
                     <li><a class="dropdown-item" href="#">Área personal</a></li>
                     <li><a class="dropdown-item" href="/list-students">Lista de estudiantes</a></li>
