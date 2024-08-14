@@ -2,56 +2,31 @@
 <div class="container">
     <h1>INTEGRACION DE SISTEMAS INFORMATICOS [Mod 4, ABR-SEP24 Mat. S-A I
         m mi j 07h00-08h30-Sur]</h1>
-    <div class="user-info">
-        <h4>Usuario:"Nombre del usuario"</h4>
-    </div>
+    <!-- <div class="user-info">
+        <h4>Usuario: {{nombre}}</h4>
+    </div> -->
     <table class="table">
         <thead>
             <tr>
-                <th>Criterio de Evaluación</th>
-                <th>Ponderación</th>
-                <th>Calificación</th>
-                <th>Rango</th>
-                <th>Porcentaje</th>
-                <th>Retroalimentación</th>
-                
+                <th>Tarea 1</th>
+                <th>Tarea 2</th>
+                <th>Tarea 3</th>
+                <th>Examen Final</th>
+                <th>Promedio</th>
+                <th>Estado</th>
             </tr>
         </thead>
         <tbody>
-            
-            <tr>
-                <td>TAREA 1</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-            </tr>
-            <tr>
-                <td>TAREA 2</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-            </tr>
-            <tr>
-                <td>TAREA 3</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-            </tr>
-            <tr>
-                <td>EXAMEN FINAL</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
+            <tr *ngFor="let item of notas">
+                <td>{{item.tarea1}}</td>
+                <td>{{item.tarea2}}</td>
+                <td>{{item.tarea3}}</td>
+                <td>{{item.examen}}</td>
+                <td>{{ (item.tarea1 + item.tarea2 + item.tarea3 + item.examen) / 4 }}</td>
+                <td>{{ ((item.tarea1 + item.tarea2 + item.tarea3 + item.examen) / 4) > 7 ? 'APRO' : 'REP' }}</td>
             </tr>
         </tbody>
     </table>
-    <button type="submit" (click)="regresar()">Regresar al curso</button>
+    <br>
+    <button class="btn" type="submit" (click)="regresar()">Regresar al curso</button>
 </div>
