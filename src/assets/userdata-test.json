@@ -12,6 +12,13 @@
             "carrera": "Desarollo de software",
             "nivel": "Cuarto"
         }
+        ,
+        {
+            "id": "102",
+            "nombre": "Jenifer Pereira",
+            "carrera": "Redes y Telecomunicaciones",
+            "nivel": "Cuarto"
+        }
     ],
     "usuarios": [
         {
