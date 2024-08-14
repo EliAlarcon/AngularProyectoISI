@@ -20,29 +20,30 @@ export class LoginComponent {
   public static logueado: boolean = false;
 
   login(formulario: any) {
-    console.log(formulario.email);
+    
     this.service.getUsuarios().subscribe((users) => {
       console.log('Usuarios obtenidos:', users);
       let foundUser;
 
+      console.log(formulario.value.username);
+      console.log(formulario.value.password);
+
       for (const user of users) {
 
-        if (user.username === formulario.value.username && user.password === formulario.value.password) {
-          let userID = user.id;
+        console.log(user);
+        console.log(user.email);
+        console.log(user.contrasena);
+
+        if (user.email === formulario.value.username && user.contrasena === formulario.value.password) {
+          let userID = user.idUsuario;
           let userName = user.nombre;
-          let userLastname = user.apellidos;
-          let userCareer = user.carrera;
+          let userLastname = user.apellido;
           let userEmail = user.email;
-          let userCity = user.ciudad;
-          let userCountry = user.pais;
           let rol = user.tipo;
-          localStorage.setItem('usuarioID', userID)
+          localStorage.setItem('usuarioID', String(userID))
           localStorage.setItem('nameOfUser', userName)
           localStorage.setItem('userLastname', userLastname)
-          localStorage.setItem('userCareer', userCareer)
           localStorage.setItem('userEmail', userEmail)
-          localStorage.setItem('userCity', userCity)
-          localStorage.setItem('userCountry', userCountry)
           localStorage.setItem('role', rol)
           console.log(rol)
           foundUser = user;

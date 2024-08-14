@@ -81,4 +81,8 @@ export class HomeComponent {
       );
     });
   }
+
+  saveInfo(id: any) {
+    localStorage.setItem('MateriaSeleccionadaID', id);
+  }
 }

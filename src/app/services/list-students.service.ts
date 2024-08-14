@@ -10,7 +10,8 @@ export class ListStudentsService {
 
   constructor(private http: HttpClient) { }
 
-  private notas = 'http://localhost:3000/notas';
+  private notas = 'http://localhost:8085/api/notas';
+  //private notas = 'http://localhost:3000/notas';
 
   getNotas(): Observable<Nota[]> {
     return this.http.get<Nota[]>(this.notas);

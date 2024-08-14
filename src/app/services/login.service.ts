@@ -9,15 +9,15 @@ import { Usuario } from '../models/usuario';
 export class LoginService {
 
   private apiUrl = 'http://localhost:8085/api/usuarios';
+  //private usuariosUrl = 'http://localhost:3000/usuarios';
 
   constructor(private http: HttpClient) { }
 
   getUsuarios(): Observable<Usuario[]>{
     return this.http.get<Usuario[]>(this.apiUrl);
   }
-  /*private usuariosUrl = 'http://localhost:3000/usuarios';
-
-  getUsuarios(): Observable<any> {
+  
+  /*getUsuarios(): Observable<any> {
     return this.http.get<any>(this.usuariosUrl);
   }
 
