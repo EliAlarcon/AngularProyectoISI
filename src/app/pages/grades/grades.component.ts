@@ -26,6 +26,7 @@ export class GradesComponent {
     console.log('Regresando al Curso');
   }
 
+  nombreMateria = localStorage.getItem('NombreMateriaSeleccionada')
   nombre = localStorage.getItem('nameOfUser');
   idUsuario = Number(localStorage.getItem('usuarioID'));
   dataNotas: any[] = [];

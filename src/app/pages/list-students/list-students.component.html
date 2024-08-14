@@ -1,0 +1,25 @@
+<app-nav-bar-top></app-nav-bar-top>
+
+<div class="container">
+    <div class="tabla-estudiantes">
+        <h3>Lista de estudiantes</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Carrera</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of dataFiltrada">
+                    <td>{{item.estudiante.idUsuario}}</td>
+                    <td>{{item.estudiante.nombre}} {{item.estudiante.apellido}}</td>
+                    <td>{{item.estudiante.email}}</td>
+                    <td>{{item.tarea.materia.curso.carrera.nombre}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
