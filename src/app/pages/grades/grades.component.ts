@@ -11,9 +11,15 @@ import { NavBarTopComponent } from "../../components/nav-bar-top/nav-bar-top.com
   styleUrl: './grades.component.css'
 })
 export class GradesComponent {
+
   constructor(private router: Router){}
+
+  nombre = localStorage.getItem('nameOfUser')
+
   regresar(){
     this.router.navigateByUrl('/curso');
     console.log("Regresando al Curso")
   }
+
+
 }
