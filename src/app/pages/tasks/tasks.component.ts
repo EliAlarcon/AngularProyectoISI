@@ -24,14 +24,14 @@ export class TasksComponent implements OnInit {
     this.loadTasks();
   }
 
-  submitTask() {
+  /*submitTask() {
     if (this.task.name && this.task.date && this.task.description) {
       this.tareasService.addTarea(this.task).subscribe(() => {
         this.task = { name: '', date: '', description: '' };
         this.loadTasks();
       });
     }
-  }
+  }*/
 
   editTask(task: any) {
     const updatedName = prompt('Nuevo nombre de la tarea:', task.name);
