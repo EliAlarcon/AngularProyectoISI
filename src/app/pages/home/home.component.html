@@ -28,7 +28,7 @@
 <div class="row">
     <div class="col-lg-4 col-md-6 mb-3 d-flex justify-content-start" *ngFor="let item of datosHome">
         <div class="card-container">
-            <a href="/curso/{{item.idMateria}}" style="text-decoration: none;">
+            <a href="/curso/{{item.idMateria}}" (click)="saveInfo(item.idMateria)" style="text-decoration: none;">
                 <div class="card">
                     <div class="card-body">
                         <img src="https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png"

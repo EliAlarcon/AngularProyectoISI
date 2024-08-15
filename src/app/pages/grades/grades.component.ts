@@ -22,8 +22,7 @@ export class GradesComponent {
   constructor(private router: Router, private servicio: GradesService) {}
 
   regresar() {
-    this.router.navigateByUrl('/curso');
-    console.log('Regresando al Curso');
+    this.router.navigateByUrl('/curso/'+this.idMateria);
   }
 
   nombreMateria = localStorage.getItem('NombreMateriaSeleccionada')
@@ -36,6 +35,8 @@ export class GradesComponent {
   ngOnInit() {
     this.servicio.getNotas().subscribe((notasList) => {
       this.dataNotas = notasList;
+      console.log(this.idMateria);
+      
 
       this.dataNotas.forEach((element) => {
         console.log(element);
