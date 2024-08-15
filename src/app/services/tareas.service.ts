@@ -7,7 +7,6 @@ import { Tarea } from '../models/tarea';
   providedIn: 'root'
 })
 export class TareasService {
-
   private apiUrl = 'http://localhost:8085/api/tareas';
 
   constructor(private http: HttpClient) {}
@@ -21,16 +20,14 @@ export class TareasService {
   }
 
   addTarea(tarea: Tarea): Observable<Tarea> {
-    return this.http.post<any>(this.apiUrl, tarea);
+    return this.http.post<Tarea>(this.apiUrl, tarea);
   }
 
   updateTarea(id: number, tarea: Tarea): Observable<Tarea> {
-    const url = `${this.apiUrl}/${id}`;
-    return this.http.put<Tarea>(url, tarea);
+    return this.http.put<Tarea>(`${this.apiUrl}/${id}`, tarea);
   }
 
   deleteTarea(id: number): Observable<void> {
-    const url = `${this.apiUrl}/${id}`;
-    return this.http.delete<void>(url);
+    return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
 }
