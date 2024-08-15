@@ -14,4 +14,5 @@ export const routes: Routes = [
     { path: 'grades', component: GradesComponent},
     { path: 'profile', component: ProfileComponent},
     { path: 'tasks', component: TasksComponent},
+    { path: 'tareas/:id', component: TasksComponent },
 ];

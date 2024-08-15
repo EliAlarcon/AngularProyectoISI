@@ -1,30 +1,33 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Tarea } from '../models/tarea';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TareasService {
-  private apiUrl = 'http://localhost:3000/tareasProfesor';
+  private apiUrl = 'http://localhost:8085/api/tareas';
 
   constructor(private http: HttpClient) {}
 
-  getTareas(): Observable<any> {
-    return this.http.get<any>(this.apiUrl);
+  getAllTareas(): Observable<Tarea[]> {
+    return this.http.get<Tarea[]>(this.apiUrl);
   }
 
-  addTarea(tarea: any): Observable<any> {
-    return this.http.post<any>(this.apiUrl, tarea);
+  getTareaById(id: number): Observable<Tarea> {
+    return this.http.get<Tarea>(`${this.apiUrl}/${id}`);
   }
 
-  updateTarea(id: number, tarea: any): Observable<any> {
-    const url = `${this.apiUrl}/${id}`;
-    return this.http.put<any>(url, tarea);
+  addTarea(tarea: Tarea): Observable<Tarea> {
+    return this.http.post<Tarea>(this.apiUrl, tarea);
   }
 
-  deleteTarea(id: number): Observable<any> {
-    const url = `${this.apiUrl}/${id}`;
-    return this.http.delete<any>(url);
+  updateTarea(id: number, tarea: Tarea): Observable<Tarea> {
+    return this.http.put<Tarea>(`${this.apiUrl}/${id}`, tarea);
+  }
+
+  deleteTarea(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
 }
