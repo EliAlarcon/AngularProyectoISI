@@ -15,6 +15,7 @@ export const routes: Routes = [
     { path: 'grades', component: GradesComponent},
     { path: 'profile/:idUser', component: ProfileComponent},
     { path: 'tasks', component: TasksComponent},
+    { path: 'tareas/:id', component: TasksComponent },
     { path: 'list-students', component: ListStudentsComponent },
     {path: '**', redirectTo: 'login', pathMatch: 'full'}
 ];
