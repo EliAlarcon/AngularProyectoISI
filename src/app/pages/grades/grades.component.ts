@@ -27,6 +27,7 @@ export class GradesComponent {
   }
 
   nombreMateria = localStorage.getItem('NombreMateriaSeleccionada')
+  idMateria = Number(localStorage.getItem('MateriaSeleccionadaID'))
   nombre = localStorage.getItem('nameOfUser');
   idUsuario = Number(localStorage.getItem('usuarioID'));
   dataNotas: any[] = [];
@@ -38,7 +39,7 @@ export class GradesComponent {
 
       this.dataNotas.forEach((element) => {
         console.log(element);
-        if (element.estudiante.idUsuario == this.idUsuario) {
+        if (element.estudiante.idUsuario == this.idUsuario && element.tarea.materia.idMateria === this.idMateria) {
           let nuevoDato: DatosNotas = {
             id: element.estudiante.idUsuario,
             tarea: element.tarea.nombre,
